@@ -2,30 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbdadf5c-3c1f-46cf-9d1a-3ac074d91486" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/pages/DevicePage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/Shop.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/db.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AppRouter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Hits.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/checkBoxField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/checkBoxField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/textField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/textField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/modal/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/modal/modal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/device.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/device.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/category.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/context/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/context/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Admin.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Auth.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/Basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Basket.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/DevicePage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/Favourite.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Favourite.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/Shop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/utils/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/validator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/Shop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Shop.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +100,8 @@
       <workItem from="1663424934579" duration="5949000" />
       <workItem from="1663431913896" duration="154000" />
       <workItem from="1663432109368" duration="269000" />
-      <workItem from="1663432467728" duration="1691000" />
+      <workItem from="1663432467728" duration="3451000" />
+      <workItem from="1663437181518" duration="1309000" />
     </task>
     <servers />
   </component>

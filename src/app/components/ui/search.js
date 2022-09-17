@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Search = ({ addModal }) => {
+const Search = ({ addModal, setValue }) => {
   return (
     <div className="m-5 italic">
       <div className="flex justify-between">
@@ -19,6 +19,7 @@ const Search = ({ addModal }) => {
             className="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-[#1E4C77] border-l-2 border  "
             placeholder="Поиск товара"
             required
+            onChange={(e) => setValue(e.target.value)}
           />
           <button
             type="submit"
@@ -33,7 +34,8 @@ const Search = ({ addModal }) => {
 };
 
 Search.propTypes = {
-  addModal: PropTypes.func
+  addModal: PropTypes.func,
+  setValue: PropTypes.func
 };
 
 export default Search;

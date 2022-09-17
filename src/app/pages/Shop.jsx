@@ -8,26 +8,36 @@ import Loader from "../components/common/Loader/loader";
 import AllDeviceList from "../components/AllDeviceList";
 
 const Shop = () => {
-  const [device, setDevice] = useState();
+  const [devices, setDevice] = useState([]);
   const [modal, setModal] = useState(false);
+  const [value, setValue] = useState("");
+  const [loading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    api.allDevices.fetchAll().then((data) => setDevice(data));
-  }, [device]);
+    setIsLoading(true);
+    api.allDevices.fetchAll().then((data) => {
+      setIsLoading(false);
+      setDevice(data);
+    });
+  }, []);
+
+  const filteredDevices = devices.filter((device) => {
+    return device.name.toLowerCase().includes(value.toLowerCase());
+  });
 
   return (
     <div>
-      {device ? (
+      {loading ? (
+        <Loader />
+      ) : (
         <>
-          <Search addModal={setModal} />
+          <Search addModal={setModal} setValue={setValue} />
           <Slider />
           <Modal visible={modal} setVisible={setModal}>
             <Category />
           </Modal>
-          <AllDeviceList devices={device} name="Весь ассортимент" />
+          <AllDeviceList devices={filteredDevices} name="Весь ассортимент" />
         </>
-      ) : (
-        <Loader />
       )}
     </div>
   );
