@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 // import { TextInput } from "flowbite-react";
+import PropTypes from "prop-types";
 
 const TextField = ({ label, type, name, value, onChange, error }) => {
   const [showPassword, setShowPassword] = useState(false);
@@ -39,6 +40,15 @@ const TextField = ({ label, type, name, value, onChange, error }) => {
       {error && <div className="text-red-800">{error}</div>}
     </div>
   );
+};
+
+TextField.propTypes = {
+  label: PropTypes.string,
+  type: PropTypes.string,
+  name: PropTypes.string,
+  value: PropTypes.string,
+  onChange: PropTypes.func,
+  error: PropTypes.string
 };
 
 export default TextField;

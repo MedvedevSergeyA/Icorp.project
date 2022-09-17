@@ -4,7 +4,7 @@ import AppRouter from "./components/AppRouter";
 import NavBar from "./components/ui/NavBar";
 import { AuthContext } from "./context";
 
-function App() {
+const App = () => {
   const [isAuth, setIsAuth] = useState(false);
   return (
     <AuthContext.Provider
@@ -19,6 +19,6 @@ function App() {
       </BrowserRouter>
     </AuthContext.Provider>
   );
-}
+};
 
 export default App;

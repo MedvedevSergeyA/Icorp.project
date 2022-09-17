@@ -2,30 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbdadf5c-3c1f-46cf-9d1a-3ac074d91486" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/components/ui/NavBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/ui/Slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/ui/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/DevicePage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pages/Shop.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/db.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AppRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Hits.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Hits.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/NavBar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/Slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/Shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/routs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/utils/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/consts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AppRouter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Hits.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/checkBoxField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/checkBoxField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/textField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/textField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/modal/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/modal/modal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/device.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/device.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/context/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/context/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Admin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Auth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/Basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Basket.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/DevicePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/Favourite.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Favourite.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/Shop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/utils/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/validator.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,13 +56,14 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Sergey/my-diplom-project&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\Sergey\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -79,7 +92,36 @@
       <workItem from="1662045873896" duration="669000" />
       <workItem from="1662046598161" duration="395000" />
       <workItem from="1662094697434" duration="3381000" />
-      <workItem from="1662288163781" duration="700000" />
+      <workItem from="1662288163781" duration="7950000" />
+      <workItem from="1662355268341" duration="1868000" />
+      <workItem from="1662357182529" duration="6838000" />
+      <workItem from="1662367101364" duration="242000" />
+      <workItem from="1662367372269" duration="1248000" />
+      <workItem from="1662377382618" duration="1020000" />
+      <workItem from="1662472001126" duration="791000" />
+      <workItem from="1662524920608" duration="55000" />
+      <workItem from="1662905512951" duration="768000" />
+      <workItem from="1662995460916" duration="223000" />
+      <workItem from="1663175253557" duration="5219000" />
+      <workItem from="1663183456685" duration="738000" />
+      <workItem from="1663184229133" duration="222000" />
+      <workItem from="1663184490379" duration="446000" />
+      <workItem from="1663184978254" duration="514000" />
+      <workItem from="1663185518847" duration="264000" />
+      <workItem from="1663185806339" duration="42000" />
+      <workItem from="1663185877131" duration="75000" />
+      <workItem from="1663186028082" duration="297000" />
+      <workItem from="1663186396120" duration="1622000" />
+      <workItem from="1663188054623" duration="434000" />
+      <workItem from="1663188549958" duration="321000" />
+      <workItem from="1663229032844" duration="3040000" />
+      <workItem from="1663269115197" duration="4049000" />
+      <workItem from="1663401235035" duration="25000" />
+      <workItem from="1663401871589" duration="9388000" />
+      <workItem from="1663424934579" duration="5949000" />
+      <workItem from="1663431913896" duration="154000" />
+      <workItem from="1663432109368" duration="269000" />
+      <workItem from="1663432467728" duration="1691000" />
     </task>
     <servers />
   </component>

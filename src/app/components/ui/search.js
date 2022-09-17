@@ -1,12 +1,17 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import CategoryButton from "../common/category.button";
+import React from "react";
+import PropTypes from "prop-types";
 
 const Search = ({ addModal }) => {
   return (
     <div className="m-5 italic">
       <div className="flex justify-between">
-        <CategoryButton setModal={addModal} />
+        <button
+          onClick={() => addModal(true)}
+          className="flex items-center bg-[#417b9c] hover:bg-[#265b8d] transition duration-150 text-white p-2 rounded-md cursor-pointer"
+        >
+          <i className="bi bi-list"></i>
+          Категории
+        </button>
         <div className="relative w-full ml-2">
           <input
             type="search"
@@ -25,6 +30,10 @@ const Search = ({ addModal }) => {
       </div>
     </div>
   );
+};
+
+Search.propTypes = {
+  addModal: PropTypes.func
 };
 
 export default Search;

@@ -1,5 +1,6 @@
 import React from "react";
 import style from "../modal/modal.module.css";
+import PropTypes from "prop-types";
 
 const Modal = ({ children, visible, setVisible }) => {
   const rootClasses = [style.modal];
@@ -15,6 +16,12 @@ const Modal = ({ children, visible, setVisible }) => {
       </div>
     </div>
   );
+};
+
+Modal.propTypes = {
+  children: PropTypes.object,
+  visible: PropTypes.bool,
+  setVisible: PropTypes.func
 };
 
 export default Modal;

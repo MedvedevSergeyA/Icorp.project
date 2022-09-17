@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Checkbox } from "flowbite-react";
+// import { Checkbox } from "flowbite-react";
 
 const CheckBoxField = ({ name, value, onChange, children, error }) => {
   const handleChange = () => {
-    onChange({ name: name, value: !value });
+    onChange({ name, value: !value });
   };
 
   return (

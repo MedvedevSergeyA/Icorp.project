@@ -1,9 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { Rating } from "flowbite-react";
 import PropTypes from "prop-types";
+import { DEVICE_ROUTE } from "../utils/consts";
 
 const Device = ({ device }) => {
+  const history = useHistory();
   return (
     <div className="flex flex-wrap">
       {device.map((device) => (
@@ -12,7 +14,11 @@ const Device = ({ device }) => {
             <i className="bi bi-heart relative z-0 inset-x-44 text-[#183E61] hover:text-red-600"></i>
           </Link>
           <div>
-            <img className="w-36" src={device.img} alt="" />
+            <img
+              className="w-36 hover:scale-110 cursor-zoom-in"
+              src={device.img}
+              alt="device"
+            />
             <div className="mt-3">
               <Rating>
                 <Rating.Star />
@@ -28,11 +34,15 @@ const Device = ({ device }) => {
                 </Link>
               </Rating>
             </div>
-            <Link to="/device/1">
-              <h3 className="mt-3 hover:underline">{device.name}</h3>
-            </Link>
+            <h3
+              className="mt-3 hover:underline"
+              onClick={() => history.push(DEVICE_ROUTE + "/" + device.id)}
+              role="button"
+            >
+              {device.name}
+            </h3>
             <p className="line-through text-[#183E61]">
-              {device.formerPrice} ₽
+              {device.formerPrice ? `${device.formerPrice} ₽` : ""}
             </p>
             <p>Цена: {device.price} ₽</p>
             <i

@@ -1,8 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Device from "./device";
+import PropTypes from "prop-types";
 
-const Hits = ({ devices, name }) => {
+const AllDeviceList = ({ devices, name }) => {
   return (
     <div className="container mx-auto px-4">
       <h1 className="mt-28 text-4xl text-[#183e61c7] text-center sm:text-left">
@@ -12,9 +12,8 @@ const Hits = ({ devices, name }) => {
     </div>
   );
 };
-
-Hits.propTypes = {
-  devices: PropTypes.array.isRequired
+AllDeviceList.propTypes = {
+  devices: PropTypes.array,
+  name: PropTypes.string
 };
-
-export default Hits;
+export default AllDeviceList;

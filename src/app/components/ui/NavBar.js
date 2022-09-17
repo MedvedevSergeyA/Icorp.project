@@ -34,7 +34,7 @@ const NavBar = () => {
                 className="rounded-sm bg-[#D9D9D9] bg-opacity-30 px-10 py-2 transition duration-200 hover:bg-[#265b8d]"
                 to={LOGIN_ROUTE}
               >
-                Вход/Регистрация
+                Вход / Регистрация
               </Link>
               <Link to="/basket" className="ml-7">
                 <i className="bi bi-cart4 text-[25px]"></i>
