@@ -1,2 +1,2 @@
 # pet-project
-For to start 'npm run dev'
+For to start 'npm run start'
