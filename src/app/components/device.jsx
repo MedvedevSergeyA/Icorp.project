@@ -9,7 +9,7 @@ const Device = ({ device }) => {
   return (
     <div className="flex flex-wrap">
       {device.map((device) => (
-        <div key={device.id} className="ml-24 mt-10 w-64">
+        <div key={device.id} className="ml-24 mt-2 sm:mt-10 w-64">
           <Link to="/">
             <i className="bi bi-heart relative z-0 inset-x-44 text-[#183E61] hover:text-red-600"></i>
           </Link>

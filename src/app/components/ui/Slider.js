@@ -4,7 +4,7 @@ import carusel from "../../assets/carusel/carusel.jpeg";
 
 const Slider = () => {
   return (
-    <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+    <div className="h-64 sm:h-64 xl:h-80 2xl:h-96">
       <Carousel>
         <img src={carusel} alt="..." />
         <img

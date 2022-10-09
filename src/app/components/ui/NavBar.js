@@ -31,7 +31,7 @@ const NavBar = () => {
           ) : (
             <div className="flex items-center mr-7">
               <Link
-                className="rounded-sm bg-[#D9D9D9] bg-opacity-30 px-10 py-2 transition duration-200 hover:bg-[#265b8d]"
+                className="rounded-sm bg-[#D9D9D9] bg-opacity-30 p-2 sm:px-10 sm:py-2 transition duration-200 hover:bg-[#265b8d]"
                 to={LOGIN_ROUTE}
               >
                 Вход / Регистрация

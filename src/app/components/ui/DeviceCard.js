@@ -7,7 +7,7 @@ const DeviceCard = ({ device }) => {
       <h1 className="mb-5 ml-5 font-bold text-lg">
         Характирестики товара: {device.name}
       </h1>
-      <div className="grid grid-cols-3 sm:grid-cols-1 lg:grid-cols-3 gap-3 w-auto p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-3 w-auto p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
         <img src={device.img} className="w-[350px] sm:m-auto" alt="" />
         <div className="sm:m-auto lg:mt-2">
           <h1 className="mb-3">{device.name}</h1>

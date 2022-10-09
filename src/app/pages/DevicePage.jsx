@@ -17,7 +17,7 @@ const DevicePage = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div>
       {isLoading ? (
         <Loader />
       ) : (
