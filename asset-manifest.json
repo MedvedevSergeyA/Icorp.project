@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e0e90822.css",
-    "main.js": "/static/js/main.90c12f66.js",
-    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
-    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
-    "static/media/carusel.jpeg": "/static/media/carusel.79ff7f3fc9ed804ae518.jpeg",
-    "index.html": "/index.html",
-    "main.e0e90822.css.map": "/static/css/main.e0e90822.css.map",
-    "main.90c12f66.js.map": "/static/js/main.90c12f66.js.map"
+    "main.css": "/icrop/static/css/main.e1672cdc.css",
+    "main.js": "/icrop/static/js/main.b4ffb9db.js",
+    "static/media/bootstrap-icons.woff?": "/icrop/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
+    "static/media/bootstrap-icons.woff2?": "/icrop/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
+    "static/media/carusel.jpeg": "/icrop/static/media/carusel.79ff7f3fc9ed804ae518.jpeg",
+    "index.html": "/icrop/index.html",
+    "main.e1672cdc.css.map": "/icrop/static/css/main.e1672cdc.css.map",
+    "main.b4ffb9db.js.map": "/icrop/static/js/main.b4ffb9db.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0e90822.css",
-    "static/js/main.90c12f66.js"
+    "static/css/main.e1672cdc.css",
+    "static/js/main.b4ffb9db.js"
   ]
 }
