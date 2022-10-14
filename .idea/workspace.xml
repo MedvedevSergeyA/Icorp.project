@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cbdadf5c-3c1f-46cf-9d1a-3ac074d91486" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/AllDeviceList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/AllDeviceList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/checkBoxField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/checkBoxField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/textField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/textField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/modal/modal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/modal/modal.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/device.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/device.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ui/DeviceCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/DeviceCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/Slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/Slider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/DevicePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/DevicePage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +34,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Sergey/fast-company",
+    "last_opened_file_path": "C:/Users/Sergey/Desktop/fast-company",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -112,6 +105,9 @@
       <workItem from="1663478983367" duration="5679000" />
       <workItem from="1663508045525" duration="11000" />
       <workItem from="1663876171166" duration="559000" />
+      <workItem from="1665330886355" duration="39000" />
+      <workItem from="1665330932466" duration="1065000" />
+      <workItem from="1665420588228" duration="16000" />
     </task>
     <servers />
   </component>

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const DeviceCard = ({ device }) => {
   return (
-    <div className="container items-center mt-16">
+    <div className="container items-center mt-16 mx-auto">
       <h1 className="mb-5 ml-5 font-bold text-lg">
         Характирестики товара: {device.name}
       </h1>
@@ -13,7 +13,7 @@ const DeviceCard = ({ device }) => {
           <h1 className="mb-3">{device.name}</h1>
           Рейтинг:
           <span className="ml-2">
-            <i className="bi bi-star-fill text-yellow-400"></i>
+            <i className="bi bi-star-fill text-yellow-400 mr-1"></i>
             {device.rate}
           </span>
           <p>Краткое описание: {device.description}</p>
