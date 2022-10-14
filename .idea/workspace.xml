@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbdadf5c-3c1f-46cf-9d1a-3ac074d91486" name="Changes" comment="">
+    <list default="true" id="cbdadf5c-3c1f-46cf-9d1a-3ac074d91486" name="Changes" comment="create build">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/DeviceCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/DeviceCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/DevicePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/DevicePage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +32,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Sergey/Desktop/fast-company",
+    "last_opened_file_path": "C:/Users/Sergey/pet-project",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -108,7 +106,16 @@
       <workItem from="1665330886355" duration="39000" />
       <workItem from="1665330932466" duration="1065000" />
       <workItem from="1665420588228" duration="16000" />
+      <workItem from="1665771047836" duration="672000" />
     </task>
+    <task id="LOCAL-00001" summary="create build">
+      <created>1665771240649</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665771240649</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,5 +131,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create build" />
+    <option name="LAST_COMMIT_MESSAGE" value="create build" />
   </component>
 </project>
