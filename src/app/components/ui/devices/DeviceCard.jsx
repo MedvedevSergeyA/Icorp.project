@@ -1,7 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { useDispatch, useSelector } from "react-redux";
+import { getDeviceById } from "../../../store/deviceSlice";
+import { addDevice } from "../../../store/basketSlice";
 
-const DeviceCard = ({ device }) => {
+const DeviceCard = ({ id }) => {
+  const device = useSelector(getDeviceById(id));
+  const { img, name, price } = device;
+  const dispatch = useDispatch();
+  const onClickAdd = () => {
+    const item = {
+      id,
+      img,
+      name,
+      price
+    };
+    dispatch(addDevice(item));
+  };
   return (
     <div className="container items-center mt-16 mx-auto">
       <h1 className="mb-5 ml-5 font-bold text-lg">
@@ -23,7 +38,10 @@ const DeviceCard = ({ device }) => {
             <p className="w-full bg-gray-50 p-2 text-lg mb-3">
               Цена: {device.price} ₽
             </p>
-            <button className="mb-3 items-center w-full bg-[#417b9c] hover:bg-[#265b8d] transition duration-150 text-white p-2 rounded-md cursor-pointer">
+            <button
+              onClick={onClickAdd}
+              className="mb-3 items-center w-full bg-[#417b9c] hover:bg-[#265b8d] transition duration-150 text-white p-2 rounded-md cursor-pointer"
+            >
               В корзину
             </button>
             <button className=" w-full items-center bg-[#417b9c] hover:bg-gray-200  hover:text-black transition duration-150 text-white p-2 rounded-md cursor-pointer">
@@ -36,6 +54,6 @@ const DeviceCard = ({ device }) => {
   );
 };
 DeviceCard.propTypes = {
-  device: PropTypes.object
+  id: PropTypes.string
 };
 export default DeviceCard;

@@ -1,17 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import ButtonCategory from "../common/modal/buttonCategory";
 
-const Search = ({ addModal, setValue }) => {
+const Search = ({ setValue }) => {
   return (
     <div className="m-5 italic">
       <div className="flex justify-between">
-        <button
-          onClick={() => addModal(true)}
-          className="flex items-center bg-[#417b9c] hover:bg-[#265b8d] transition duration-150 text-white p-2 rounded-md cursor-pointer"
-        >
-          <i className="bi bi-list"></i>
-          Категории
-        </button>
+        <ButtonCategory />
         <div className="relative w-full ml-2">
           <input
             type="search"

@@ -3,11 +3,11 @@ body.modal {
 }
 
 .modal {
-  @apply fixed top-0 bottom-0 right-0 left-0 hidden bg-[#00000066];
+  @apply fixed content-center top-0 bottom-0 right-0 left-0 hidden bg-[#00000066];
 }
 
 .modalContent {
-  @apply p-20 bg-white rounded-2xl min-w-[250];
+  @apply relative p-20 bg-white rounded-2xl min-w-[250];
 }
 
 .modal.active {

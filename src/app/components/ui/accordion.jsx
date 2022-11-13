@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
-import { Collapsee as Accordion } from "flowbite-react";
 
 const Collapse = ({ children, title, name }) => {
   const [display, setDisplay] = useState(false);
@@ -15,7 +14,12 @@ const Collapse = ({ children, title, name }) => {
     display ? newCollapse.show() : newCollapse.hide();
   }, [display]);
 
-  return <div>Hello</div>;
+  return (
+    <div>
+      hello
+      <button onClick={toggleDisplay}></button>
+    </div>
+  );
 };
 
 Collapse.propTypes = {

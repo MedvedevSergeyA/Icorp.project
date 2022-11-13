@@ -36,6 +36,7 @@ const allDevices = [
     id: "659318ffdkq23",
     name: "Умная колонка Яндекс Станция 2",
     price: 16352,
+    formerPrice: 18999,
     isFavourite: false,
     rate: 3,
     reviews: 30,
@@ -66,14 +67,13 @@ const allDevices = [
   },
   {
     id: "659318ffdkq26",
-    name: "Яндекс.Станция Кастомизированная",
+    name: "Яндекс Станция Кастомизированная",
     price: 4999,
     isFavourite: false,
     description: " 128Gb, фиолетовый",
     img: "//img.mvideo.ru/Big/10031221bb.jpg",
     rate: 4,
-    reviews: 150,
-    formerPrice: 5999
+    reviews: 150
   },
   {
     id: "659318ffdkq27",
@@ -121,7 +121,7 @@ const allDevices = [
   },
   {
     id: "659318ffdkq31",
-    name: "Ноутбук игровой MSI Katana",
+    name: "Ноутбук игровой MSI Katana MSI 245",
     price: 109352,
     isFavourite: false,
     description: "55 дюймов 3840х2160 Пикс",

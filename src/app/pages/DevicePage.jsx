@@ -1,19 +1,16 @@
 import React, { useEffect, useState } from "react";
-import DeviceCard from "../components/ui/DeviceCard";
+import DeviceCard from "../components/ui/devices/DeviceCard";
 import { useParams } from "react-router-dom";
-import api from "../api";
 import Loader from "../components/common/Loader/loader";
 
 const DevicePage = () => {
-  const [device, setDevice] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const { id } = useParams();
   useEffect(() => {
     setIsLoading(true);
-    api.allDevices.getById(id).then((data) => {
-      setDevice(data);
+    setTimeout(() => {
       setIsLoading(false);
-    });
+    }, 2000);
   }, []);
 
   return (
@@ -22,7 +19,7 @@ const DevicePage = () => {
         <Loader />
       ) : (
         <div>
-          <DeviceCard device={device} />
+          <DeviceCard id={id} />
         </div>
       )}
     </div>

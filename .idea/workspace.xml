@@ -2,8 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbdadf5c-3c1f-46cf-9d1a-3ac074d91486" name="Changes" comment="create build">
+      <change afterPath="$PROJECT_DIR$/src/app/components/ui/NavBar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ui/devices/AllDeviceList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ui/devices/device.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/AllDevices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/fake.api/AllDevices.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/assets/devices/honor_m12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/assets/devices/honor_notebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/assets/devices/iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/assets/devices/yandex_station.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/assets/header_bg/header_bg.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/AllDeviceList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/AppRouter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/appRouter/AppRouter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/category.button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/category.button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/checkBoxField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/form/checkBoxField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/modal/modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/modal/modal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/modal/modal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/modal/modal.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/device.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/DeviceCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/devices/DeviceCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/NavBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/Slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/Slider.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/accordion.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/accordion.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ui/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ui/search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/Basket.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/DevicePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/DevicePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/Shop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/Shop.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/routs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/routs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/utils/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/utils/consts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +66,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sergey/pet-project&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sergey/Desktop/redux-toolkit&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -48,8 +81,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Sergey\my-diplom-project\src\app\components\ui" />
-      <recent name="C:\Users\Sergey\my-diplom-project\src\app\components" />
+      <recent name="C:\Users\Sergey\pet-project\src\app\components\common\sideBarBasket" />
+      <recent name="C:\Users\Sergey\pet-project\src\app\components\ui" />
+      <recent name="C:\Users\Sergey\pet-project\src\app" />
+      <recent name="C:\Users\Sergey\pet-project\src\app\components\appRouter" />
+      <recent name="C:\Users\Sergey\pet-project\src\app\components\devices" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -108,7 +144,25 @@
       <workItem from="1665330932466" duration="1065000" />
       <workItem from="1665420588228" duration="16000" />
       <workItem from="1665771047836" duration="672000" />
-      <workItem from="1665771738599" duration="2104000" />
+      <workItem from="1665771738599" duration="3851000" />
+      <workItem from="1666519865640" duration="12046000" />
+      <workItem from="1666559167021" duration="3462000" />
+      <workItem from="1666724193029" duration="4431000" />
+      <workItem from="1666764898830" duration="4227000" />
+      <workItem from="1666804098935" duration="7000" />
+      <workItem from="1667890135637" duration="238000" />
+      <workItem from="1667926207418" duration="2112000" />
+      <workItem from="1668014759811" duration="9090000" />
+      <workItem from="1668027214460" duration="3001000" />
+      <workItem from="1668064859481" duration="148000" />
+      <workItem from="1668074738053" duration="9000" />
+      <workItem from="1668084060746" duration="616000" />
+      <workItem from="1668093342611" duration="514000" />
+      <workItem from="1668245417887" duration="2146000" />
+      <workItem from="1668281683232" duration="10810000" />
+      <workItem from="1668312068295" duration="162000" />
+      <workItem from="1668338691235" duration="584000" />
+      <workItem from="1668360449753" duration="6596000" />
     </task>
     <task id="LOCAL-00001" summary="create build">
       <created>1665771240649</created>
