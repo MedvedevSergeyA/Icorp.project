@@ -13,7 +13,7 @@ const Shop = () => {
       <Modal>
         <Category />
       </Modal>
-      <AllDeviceList name="Список товаров" />
+      <AllDeviceList title="Список товаров" />
     </div>
   );
 };

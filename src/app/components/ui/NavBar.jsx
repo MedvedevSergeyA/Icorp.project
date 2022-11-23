@@ -10,7 +10,7 @@ const NavBar = () => {
   const { entities, totalPrice } = useSelector((state) => state.basket);
   const { isAuth } = useContext(AuthContext);
   return (
-    <nav className="h-20 text-white italic bg-[#3e7cb6]">
+    <nav className="h-20 dark:bg-gradient-to-r dark:from-blue-900 dark:to-[#1f1461] text-white italic bg-gradient-to-r from-sky-500 to-indigo-500">
       <div className="flex justify-between items-center">
         <Link className="m-5 text-2xl font-bold ml-6" to="/">
           ICorb
@@ -24,9 +24,15 @@ const NavBar = () => {
               Админ панель
             </Link>
             <button className="ml-7">Выйти</button>
-            <Link to="/basket" className="ml-7">
-              <i className="bi bi-cart4 text-[25px]"></i>
-            </Link>
+            <div
+              className="bg-[#D9D9D9] bg-opacity-25 p-2 rounded-[10px] ml-[55px]"
+              role="button"
+              onClick={() => dispatch(sideBarOpen())}
+            >
+              <span className="border-r-[1px] pr-2">{totalPrice} ₽</span>
+              <i className="bi bi-cart4 text-[25px] text-[18px] pl-2"></i>
+              <span className="ml-2">{entities.length}</span>
+            </div>
             <Link className="ml-7 " to="/favourite">
               <i className="bi bi-suit-heart-fill text-[25px]"></i>
             </Link>
@@ -34,7 +40,7 @@ const NavBar = () => {
         ) : (
           <div className="flex items-center mr-7">
             <div
-              className="bg-[#D9D9D9] bg-opacity-25 p-2 rounded-[10px] ml-[55px]"
+              className="bg-[#D9D9D9] bg-opacity-25 p-2 rounded-[10px] ml-[55px] hover:-translate-y-0.5 transition duration-150"
               role="button"
               onClick={() => dispatch(sideBarOpen())}
             >

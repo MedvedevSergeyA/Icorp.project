@@ -80,7 +80,7 @@ const LoginForm = () => {
         <a>Запомнить меня</a>
       </CheckBoxField>
       <button
-        className="bg-[#417b9c] hover:bg-[#265b8d] transition duration-150 text-white p-2 rounded-md cursor-pointer"
+        className="bg-[#417b9c] dark:bg-[#14458f] hover:bg-[#265b8d] transition duration-150 text-white p-2 rounded-md cursor-pointer"
         type="submit"
         disabled={!isValid}
       >

@@ -1,7 +1,6 @@
 import React from "react";
 import LoginForm from "../components/ui/loginForm";
 import { useLocation, NavLink } from "react-router-dom";
-import { Card } from "flowbite-react";
 import RegisterForm from "../components/ui/registerForm";
 import { LOGIN_ROUTE, REGISTRATION_ROUTE } from "../utils/consts";
 
@@ -11,9 +10,9 @@ const Auth = () => {
 
   return (
     <div>
-      <div className="h-24 mt-[5rem] max-w-lg m-auto">
+      <div className="h-24 mt-[5rem] max-w-lg m-auto h-screen">
         {isLogin ? (
-          <Card>
+          <div className="max-w-[30rem]  p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-[#191919] dark:border-[#5d68cf] dark:text-white">
             <h3 className="m-auto text-3xl pb-3">Авторизация</h3>
             <LoginForm />
             <p>
@@ -21,14 +20,14 @@ const Auth = () => {
               <NavLink
                 to={REGISTRATION_ROUTE}
                 role="button"
-                className="ml-2 hover:underline text-blue-900"
+                className="ml-2 hover:underline text-blue-900 dark:text-blue-100"
               >
                 Зарегистрироваться
               </NavLink>
             </p>
-          </Card>
+          </div>
         ) : (
-          <Card>
+          <div className="max-w-[30rem]  p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-[#191919] dark:border-gray-700 dark:text-white">
             <h3 className="m-auto text-3xl pb-3">Регистрация</h3>
             <RegisterForm />
             <p>
@@ -36,12 +35,12 @@ const Auth = () => {
               <NavLink
                 to={LOGIN_ROUTE}
                 role="button"
-                className="ml-2 hover:underline text-blue-900"
+                className="ml-2 hover:underline text-blue-900 dark:text-blue-100"
               >
                 Войти
               </NavLink>
             </p>
-          </Card>
+          </div>
         )}
       </div>
     </div>

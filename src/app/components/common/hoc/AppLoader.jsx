@@ -14,7 +14,7 @@ const AppLoader = ({ children }) => {
     setTimeout(() => {
       setIsLoading(false);
     }, 2000);
-  }, []);
+  }, [setIsLoading]);
 
   if (isLoading) return <Loader />;
   return children;

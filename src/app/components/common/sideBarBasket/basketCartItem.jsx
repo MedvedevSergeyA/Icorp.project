@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import { DEVICE_ROUTE } from "../../utils/consts";
+import { DEVICE_ROUTE } from "../../../utils/consts";
 import { useDispatch } from "react-redux";
-import { removeDevice } from "../../store/basketSlice";
+import { removeDevice } from "../../../store/basketSlice";
 
 const BasketCartItem = ({ id, img, name, price }) => {
   const dispatch = useDispatch();
   return (
-    <div className="flex items-center mt-10 border-2 rounded-[20px] border-[#f3f3f3] overflow-hidden p-[20px]">
+    <div className="flex items-center mt-10 border-2 rounded-[20px] border-[#f3f3f3] dark:border-gray-200 overflow-hidden p-[20px]">
       <div>
         <img
           src={img}
@@ -48,7 +48,7 @@ BasketCartItem.propTypes = {
   id: PropTypes.string,
   img: PropTypes.string,
   name: PropTypes.string,
-  price: PropTypes.string
+  price: PropTypes.number
 };
 
 export default BasketCartItem;

@@ -21,10 +21,13 @@ const Device = ({ device }) => {
   };
 
   return (
-    <div key={device.id} className="ml-20 mt-2 sm:mt-10 w-64">
+    <div
+      key={device.id}
+      className="md:ml-20 md:mt-10 sm:mx-auto align-middle w-64 ml-28 dark:text-[#808080]"
+    >
       <Link to="/">
         <button className="transition ease-in-out delay-75 hover:-translate-y-1 duration-300] w-1">
-          <i className="bi bi-heart text-[#183E61] pl-40 hover:text-red-400 hover:delay-75"></i>
+          <i className="bi bi-heart text-[#183E61] dark:text-[#5d68cf] dark:hover:text-red-600 pl-40 hover:text-red-400 hover:delay-75"></i>
         </button>
       </Link>
       <img
@@ -35,13 +38,13 @@ const Device = ({ device }) => {
       <div className="mt-3">
         <Rating>
           <Rating.Star />
-          <p className="ml-2 text-sm font-bold text-gray-900 dark:text-white ">
+          <p className="ml-2 text-sm font-bold text-gray-900 dark:text-[#808080] ">
             {device.rate}
           </p>
           <span className="mx-1.5 h-1 w-1 rounded-full bg-gray-500 dark:bg-gray-400" />
           <Link
             to="/"
-            className="text-sm font-medium text-gray-900 underline hover:no-underline dark:text-white"
+            className="text-sm font-medium text-gray-900 underline hover:no-underline dark:text-[#808080]"
           >
             {device.reviews} Просмотров
           </Link>
@@ -56,7 +59,7 @@ const Device = ({ device }) => {
           {device.name}
         </h3>
         <div className="mb-1">
-          <p className="line-through text-[#183E61]">
+          <p className="line-through text-[#183E61] dark:text-[#808080]">
             {device.formerPrice ? `${device.formerPrice} ₽` : ""}
           </p>
           <p>Цена: {device.price} ₽</p>
@@ -64,7 +67,7 @@ const Device = ({ device }) => {
       </div>
       <div className="mt-2 flex justify-end" onClick={onClickAdd}>
         <button className="hover:scale-110">
-          <div className="bg-indigo-300 rounded-[50%] p-2 hover:bg-green-400">
+          <div className="bg-indigo-300 rounded-[50%] p-2 hover:bg-green-400 dark:bg-indigo-700 dark:hover:bg-green-400">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

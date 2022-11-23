@@ -18,11 +18,11 @@ const DeviceCard = ({ id }) => {
     dispatch(addDevice(item));
   };
   return (
-    <div className="container items-center mt-16 mx-auto">
-      <h1 className="mb-5 ml-5 font-bold text-lg">
+    <div className="h-screen container items-center mt-16 mx-auto">
+      <h1 className="mb-5 ml-5 font-bold text-lg dark:text-gray-300">
         Характирестики товара: {device.name}
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-3 w-auto p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+      <div className="dark:bg-[#191919] dark:text-gray-300 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-3 w-auto p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
         <img src={device.img} className="w-[350px] sm:m-auto" alt="" />
         <div className="sm:m-auto lg:mt-2">
           <h1 className="mb-3">{device.name}</h1>
@@ -35,16 +35,16 @@ const DeviceCard = ({ id }) => {
         </div>
         <div>
           <div className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-            <p className="w-full bg-gray-50 p-2 text-lg mb-3">
+            <p className="w-full bg-gray-50 p-2 text-lg mb-3 dark:bg-[#191919]">
               Цена: {device.price} ₽
             </p>
             <button
               onClick={onClickAdd}
-              className="mb-3 items-center w-full bg-[#417b9c] hover:bg-[#265b8d] transition duration-150 text-white p-2 rounded-md cursor-pointer"
+              className="dark:bg-[#14458f] dark:hover:bg-blue-800 dark:hover:text-white mb-3 items-center w-full bg-[#417b9c] hover:bg-[#265b8d] transition duration-150 text-white p-2 rounded-md cursor-pointer"
             >
               В корзину
             </button>
-            <button className=" w-full items-center bg-[#417b9c] hover:bg-gray-200  hover:text-black transition duration-150 text-white p-2 rounded-md cursor-pointer">
+            <button className="dark:bg-[#14458f] dark:hover:text-white dark:hover:bg-blue-800 w-full items-center bg-[#417b9c] hover:bg-gray-200  hover:text-black transition duration-150 text-white p-2 rounded-md cursor-pointer">
               Добавить в избранное
             </button>
           </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { sideBarClose } from "../../../store/sideBar";
-import BasketCartItem from "../../ui/basketCartItem";
+import BasketCartItem from "./basketCartItem";
 import { clearDevice } from "../../../store/basketSlice";
 
 const SideBarBasket = () => {
@@ -10,8 +10,8 @@ const SideBarBasket = () => {
   const { totalPrice } = useSelector((state) => state.basket);
   return (
     <>
-      <div className="fixed left-0 top-0 z-[1] w-[100%] h-[100%] bg-[#00000066] overflow-x-scroll">
-        <div className="absolute w-[420px] h-[100%] right-0 h-auto p-[30px] bg-white flex flex-col">
+      <div className=" fixed left-0 top-0 z-[1] w-[100%] h-[100%] bg-[#00000066] overflow-x-scroll">
+        <div className="dark:bg-gray-100 absolute w-[420px] h-[100%] right-0 h-auto p-[30px] bg-white flex flex-col">
           <div className="flex justify-between items-center">
             <div>
               <h2 className="mb-[15px] text-[24px]">Корзина</h2>
