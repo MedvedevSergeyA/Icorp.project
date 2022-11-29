@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../modal/modal.module.css";
+import style from "./modal.module.css";
 import PropTypes from "prop-types";
 import { useDispatch, useSelector } from "react-redux";
 import { modalClose } from "../../../store/modal";

@@ -1,0 +1,121 @@
+[{
+  "id": "659318ffdkq20",
+  "name": "Телевизор Samsung UE55AU7100UXCE",
+  "description": "55 дюймов 3840x2160 Пикс",
+  "img": "//img.mvideo.ru/Big/10031027bb.jpg",
+  "isFavourite": false,
+  "price": 68999,
+  "rate": 3,
+  "reviews": 30
+},
+  {
+    "id": "659318ffdkq21",
+    "name": "Смартфон Apple iPhone 13 Pro Max",
+    "description": "256GB Sierra Blue",
+    "img": "//img.mvideo.ru/Pdb/30063591b.jpg",
+    "isFavourite": false,
+    "price": 107352,
+    "rate": 3,
+    "reviews": 30
+  },
+  {
+    "id": "659318ffdkq22",
+    "name": "Смартфон Xiaomi Redmi Note 10S",
+    "description": "6+64GB Gray",
+    "img": "//img.mvideo.ru/Big/30057494bb.jpg",
+    "isFavourite": false,
+    "price": 14352,
+    "rate": 4,
+    "reviews": 30
+  },
+  {
+    "id": "659318ffdkq23",
+    "name": "Умная колонка Яндекс Станция 2",
+    "description": "Алиса, цвет Кобальт",
+    "img": "//img.mvideo.ru/Big/10030163bb.jpg",
+    "isFavourite": false,
+    "price": 16352,
+    "rate": 4,
+    "reviews": 30
+  },
+  {
+    "id": "659318ffdkq24",
+    "name": "Apple IPhone 11 Pro Max",
+    "description": "64Gb, темно-зеленый",
+    "img": "//img.mvideo.ru/Big/30063190bb.jpg",
+    "isFavourite": false,
+    "price": 114999,
+    "rate": 4.3,
+    "reviews": 57
+  },
+  {
+    "id": "659318ffdkq25",
+    "name": "Ноутбук Honor MagicBook X 15",
+    "description": "i3 8/256 Gray (BBR-WAI9)",
+    "img": "//img.mvideo.ru/Big/30056686bb.jpg",
+    "isFavourite": false,
+    "price": 44999,
+    "rate": 5,
+    "reviews": 10
+  },
+  {
+    "id": "659318ffdkq26",
+    "name": "Яндекс Станция Кастомизированная",
+    "description": "Классная штука",
+    "img": "//img.mvideo.ru/Big/10031221bb.jpg",
+    "isFavourite": false,
+    "price": 4999,
+    "rate": 4,
+    "reviews": 150
+  },
+  {
+    "id": "659318ffdkq27",
+    "name": "Смартфон Apple iPhone 13 Pro Max",
+    "description": "128Gb, фиолетовый",
+    "img": "//img.mvideo.ru/Big/30063590bb.jpg",
+    "isFavourite": false,
+    "price": 129999,
+    "rate": 4,
+    "reviews": 150
+  },
+  {
+    "id": "659318ffdkq28",
+    "name": "Смартфон Samsung Galaxy S20 FE",
+    "description": "512GB",
+    "img": "//img.mvideo.ru/Pdb/30064010b.jpg",
+    "isFavourite": false,
+    "price": 42352,
+    "rate": 4.5,
+    "reviews": 150
+  },
+  {
+    "id": "659318ffdkq29",
+    "name": "Смартфон Samsung Galaxy S22 Ultra 5G",
+    "description": "256GB Phantom White",
+    "img": "//img.mvideo.ru/Big/30063286bb.jpg",
+    "isFavourite": false,
+    "price": 89352,
+    "rate": 5,
+    "reviews": 35
+  },
+  {
+    "id": "659318ffdkq30",
+    "name": "Телевизор Samsung QE55QN87AAU",
+    "description": "55 дюймов 3840х2160 Пикс",
+    "img": "//img.mvideo.ru/Big/10026266bb.jpg",
+    "isFavourite": false,
+    "price": 146352,
+    "rate": 5,
+    "reviews": 35
+  },
+  {
+    "id": "659318ffdkq31",
+    "name": "Ноутбук игровой MSI Katana MSI 245",
+    "description": "55 дюймов 3840х2160 Пикс",
+    "img": "//img.mvideo.ru/Big/30061606bb.jpg",
+    "isFavourite": false,
+    "price": 109352,
+    "rate": 3.5,
+    "reviews": 45
+  }
+]
