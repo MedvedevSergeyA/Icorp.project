@@ -19,11 +19,13 @@ const AllDeviceList = ({ title }) => {
     <>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center mb-10">
-          <h1 className="dark:text-white mt-18 text-2xl sm:text-4xl sm:mt-24 text-[#183e61c7] sm:text-left">
-            {title}
-          </h1>
+          <div className="dark:h-auto">
+            <h1 className="dark:text-white  mt-18 text-2xl sm:text-4xl sm:mt-24 text-[#183e61c7] sm:text-left">
+              {title}
+            </h1>
+          </div>
         </div>
-        <div className="flex flex-wrap items-center h-[1200px]">{items}</div>
+        <div className="flex flex-wrap items-center">{items}</div>
       </div>
     </>
   );

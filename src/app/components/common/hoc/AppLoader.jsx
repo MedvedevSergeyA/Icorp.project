@@ -16,7 +16,9 @@ const AppLoader = ({ children }) => {
     }, 2000);
   }, [setIsLoading]);
 
-  if (isLoading) return <Loader />;
+  if (isLoading) {
+    return <Loader />;
+  }
   return children;
 };
 

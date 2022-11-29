@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import AppRouter from "./components/appRouter/AppRouter";
-import NavBar from "./components/ui/NavBar";
+import NavBar from "./components/ui/Navbar/NavBar";
 import { AuthContext } from "./context";
 import AppLoader from "./components/common/hoc/AppLoader";
 import SideBarBasket from "./components/common/sideBarBasket/sideBarBasket";
