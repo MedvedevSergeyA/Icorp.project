@@ -2,75 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbdadf5c-3c1f-46cf-9d1a-3ac074d91486" name="Changes" comment="create build">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/.prettierrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/postcss.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/logo192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/logo512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/AllDevices.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/api/fake.api/AllDevices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/fake.api/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/api/fake.api/Category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/assets/carusel/carusel.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/assets/carusel/carusel.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/assets/Снимок.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/assets/Снимок.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/appRouter/AppRouter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/appRouter/AppRouter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/Backgound/backGround.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/Backgound/backGround.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/Humbuger/humburger.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/Humbuger/humburger.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/Loader/loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/Loader/loader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/Pagintaion/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/Pagintaion/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/Toggle/toggle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/Toggle/toggle.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/checkBoxField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/form/checkBoxField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/form/textField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/form/textField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/hoc/AppLoader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/hoc/AppLoader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/modal/buttonCategory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/modal/buttonCategory.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/modal/modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/modal/modal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/modal/modal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/modal/modal.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/sideBarBasket/basketCartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/sideBarBasket/basketCartItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/sideBarBasket/sideBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/sideBarBasket/sideBar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/sideBarBasket/sideBarBasket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/sideBarBasket/sideBarBasket.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/Navbar/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/Navbar/NavBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/Navbar/NavbarItems/authLinks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/Navbar/NavbarItems/authLinks.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/Navbar/NavbarItems/notAuthLinks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/Navbar/NavbarItems/notAuthLinks.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/Slider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/devices/AllDeviceList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/devices/AllDeviceList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/devices/DeviceCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/devices/DeviceCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/devices/device.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/devices/device.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/loginForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/registerForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ui/search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/search.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/context/ThemeContext/themeContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/context/ThemeContext/themeContext.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/context/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/context/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/context/searchContext/searchContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/context/searchContext/searchContext.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/Admin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/Admin.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/Auth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/Auth.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/DevicePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/DevicePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/Favourite.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/Favourite.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/Shop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/Shop.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routs.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/routs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/devices.services.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/services/devices.services.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/http.services.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/services/http.services.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/basketSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/store/basketSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/createStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/store/createStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/deviceSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/store/deviceSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/store/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/sideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/store/sideBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/utils/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/utils/consts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/utils/isOutDated.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/utils/isOutDated.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/utils/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/utils/validator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/common/sideBarBasket/basketCartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/sideBarBasket/basketCartItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/Navbar/NavbarItems/notAuthLinks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/Navbar/NavbarItems/notAuthLinks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/devices/DeviceCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/devices/DeviceCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/devices/device.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/devices/device.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/store/basketSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/store/basketSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mock/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/mock/categories.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modals/Device.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/modals/Device.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startUp/initDatabase.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/startUp/initDatabase.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +162,8 @@
       <workItem from="1669614737952" duration="5026000" />
       <workItem from="1669633743248" duration="3934000" />
       <workItem from="1669662910840" duration="182000" />
-      <workItem from="1669741279981" duration="4128000" />
+      <workItem from="1669741279981" duration="4621000" />
+      <workItem from="1669805588277" duration="10778000" />
     </task>
     <task id="LOCAL-00001" summary="create build">
       <created>1665771240649</created>

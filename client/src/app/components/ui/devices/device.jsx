@@ -3,13 +3,18 @@ import { Link, useHistory } from "react-router-dom";
 import { Rating } from "flowbite-react";
 import PropTypes from "prop-types";
 import { DEVICE_ROUTE } from "../../../utils/consts";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addDevice } from "../../../store/basketSlice";
 
 const Device = ({ device }) => {
   const { id, img, name, price } = device;
   const history = useHistory();
   const dispatch = useDispatch();
+  const basketItem = useSelector((state) =>
+    state.basket.entities.find((obj) => obj.id === id)
+  );
+  const addedCount = basketItem ? basketItem.count : 0;
+
   const onClickAdd = () => {
     const item = {
       id,
@@ -26,7 +31,7 @@ const Device = ({ device }) => {
       className="md:ml-20 md:mt-10 sm:mx-auto align-middle w-64 ml-28 dark:text-[#808080]"
     >
       <Link to="/">
-        <button className="transition ease-in-out delay-75 hover:-translate-y-1 duration-300] w-1">
+        <button className="transition ease-in-out delay-75 hover:-translate-y-1 duration-300] w-1 mt-10">
           <i className="bi bi-heart text-[#183E61] dark:text-[#5d68cf] dark:hover:text-red-600 pl-40 hover:text-red-400 hover:delay-75"></i>
         </button>
       </Link>
@@ -65,21 +70,35 @@ const Device = ({ device }) => {
           <p>Цена: {device.price} ₽</p>
         </div>
       </div>
-      <div className="mt-2 flex justify-end" onClick={onClickAdd}>
-        <button className="hover:scale-110">
-          <div className="bg-indigo-300 rounded-[50%] p-2 hover:bg-green-400 dark:bg-indigo-700 dark:hover:bg-green-400">
+      <div className="mt-4 items-center flex">
+        <div>
+          <button
+            className="flex bg-indigo-300 rounded-[30px] px-[9px] py-[5px] min-w-[70px] align-middle items-center mx-auto border-1"
+            onClick={onClickAdd}
+          >
             <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              className="bi bi-cart-plus fill-white"
-              viewBox="0 0 16 16"
+              className="ml-2"
             >
-              <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
-              <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+              <path
+                d="M10.8 4.8H7.2V1.2C7.2 0.5373 6.6627 0 6 0C5.3373 0 4.8 0.5373 4.8 1.2V4.8H1.2C0.5373 4.8 0 5.3373 0 6C0 6.6627 0.5373 7.2 1.2 7.2H4.8V10.8C4.8 11.4627 5.3373 12 6 12C6.6627 12 7.2 11.4627 7.2 10.8V7.2H10.8C11.4627 7.2 12 6.6627 12 6C12 5.3373 11.4627 4.8 10.8 4.8Z"
+                fill="white"
+              />
             </svg>
-          </div>
-        </button>
+            <div>
+              <span className="ml-2">Добавить</span>
+              {addedCount > 0 && (
+                <i className="inline-block rounded-[30px] bg-indigo-100 w-[20px] h-[20px] relative top-[-5px] left-[3px] text-xs">
+                  {addedCount}
+                </i>
+              )}
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -12,6 +12,7 @@ const schema = new Schema(
     price: Number,
     rate: Number,
     reviews: Number,
+    category: { type: Schema.Types.ObjectId, ref: "Category" },
   },
   {
     timestamps: true,

@@ -36,11 +36,11 @@ const NotAuthLinks = ({ setOpen, open, entities, totalPrice }) => {
           </div>
         </li>
         <li className="md:ml-8 text-xl md:my-0 my-7">
-          <Link className="flex sm:px-10 sm:py-2" to={LOGIN_ROUTE}>
+          <Link className="flex px-10 py-2 items-center " to={LOGIN_ROUTE}>
+            <p className="mr-2">Войти</p>
             <div className="text-2xl">
               <ion-icon name="log-out-outline"></ion-icon>
             </div>
-            <p className="ml-2">Войти</p>
           </Link>
         </li>
       </ul>
