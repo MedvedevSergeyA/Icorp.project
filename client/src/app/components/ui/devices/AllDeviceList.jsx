@@ -1,12 +1,22 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Device from "./device";
 import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
 import { getDeviceList } from "../../../store/deviceSlice";
 import SearchContext from "../../../context/searchContext/searchContext";
+import { paginate } from "../../../utils/paginate";
+import Pagination from "../../common/Pagintaion";
 const AllDeviceList = ({ title }) => {
+  const [currentPage, setCurrentPage] = useState(1);
   const devices = useSelector(getDeviceList());
   const { searchValue } = useContext(SearchContext);
+  const pageSize = 4;
+  const handlePageChange = (pageIndex) => {
+    setCurrentPage(pageIndex);
+  };
+  useEffect(() => {
+    setCurrentPage(1);
+  }, []);
   const items = devices
     .filter((obj) => {
       if (obj.name.toLowerCase().includes(searchValue.toLowerCase())) {
@@ -15,6 +25,8 @@ const AllDeviceList = ({ title }) => {
       return false;
     })
     .map((device) => <Device device={device} key={device.id} />);
+  const count = items.length;
+  const deviceCrop = paginate(items, currentPage, pageSize);
   return (
     <>
       <div className="container mx-auto px-4">
@@ -25,7 +37,17 @@ const AllDeviceList = ({ title }) => {
             </h1>
           </div>
         </div>
-        <div className="flex flex-wrap items-center">{items}</div>
+        {count > 0 && (
+          <div className="flex flex-wrap items-center">{deviceCrop}</div>
+        )}
+        <div className="mt-24 mb-10 flex justify-center">
+          <Pagination
+            itemsCount={count}
+            pageSize={pageSize}
+            currentPage={currentPage}
+            onPageChange={handlePageChange}
+          />
+        </div>
       </div>
     </>
   );

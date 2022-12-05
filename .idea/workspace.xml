@@ -4,14 +4,17 @@
     <list default="true" id="cbdadf5c-3c1f-46cf-9d1a-3ac074d91486" name="Changes" comment="create build">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/common/sideBarBasket/basketCartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/sideBarBasket/basketCartItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/Navbar/NavbarItems/notAuthLinks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/Navbar/NavbarItems/notAuthLinks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/common/Pagintaion/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/Pagintaion/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/devices/AllDeviceList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/devices/AllDeviceList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/devices/DeviceCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/devices/DeviceCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/devices/device.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/devices/device.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/store/basketSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/store/basketSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mock/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/mock/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modals/Device.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/modals/Device.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startUp/initDatabase.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/startUp/initDatabase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/Shop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/Shop.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/default.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/default.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/auth.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/auth.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/comment.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/comment.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,24 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Sergey/appFastCompany",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Sergey\\AppData\\Roaming\\npm\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sergey/Icorp.project&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\Sergey\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Sergey\Icorp.project\client" />
@@ -163,7 +166,18 @@
       <workItem from="1669633743248" duration="3934000" />
       <workItem from="1669662910840" duration="182000" />
       <workItem from="1669741279981" duration="4621000" />
-      <workItem from="1669805588277" duration="10778000" />
+      <workItem from="1669805588277" duration="11273000" />
+      <workItem from="1669818834920" duration="26000" />
+      <workItem from="1669923965290" duration="48000" />
+      <workItem from="1670097905289" duration="2896000" />
+      <workItem from="1670103627720" duration="560000" />
+      <workItem from="1670167171726" duration="247000" />
+      <workItem from="1670179379028" duration="2903000" />
+      <workItem from="1670187995966" duration="274000" />
+      <workItem from="1670188657737" duration="36000" />
+      <workItem from="1670222285025" duration="9016000" />
+      <workItem from="1670254497968" duration="39000" />
+      <workItem from="1670255141921" duration="2212000" />
     </task>
     <task id="LOCAL-00001" summary="create build">
       <created>1665771240649</created>

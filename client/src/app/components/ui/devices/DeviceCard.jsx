@@ -38,14 +38,13 @@ const DeviceCard = ({ id }) => {
             <p className="w-full bg-gray-50 p-2 text-lg mb-3 dark:bg-[#191919]">
               Цена: {device.price} ₽
             </p>
-            <i className="text-black">0</i>
             <button
               onClick={onClickAdd}
               className="dark:bg-[#14458f] dark:hover:bg-blue-800 dark:hover:text-white mb-3 items-center w-full bg-[#417b9c] hover:bg-[#265b8d] transition duration-150 text-white p-2 rounded-md cursor-pointer"
             >
               В корзину
             </button>
-            <button className="dark:bg-[#14458f] dark:hover:text-white dark:hover:bg-blue-800 w-full items-center bg-[#417b9c] hover:bg-gray-200  hover:text-black transition duration-150 text-white p-2 rounded-md cursor-pointer">
+            <button className="dark:bg-gradient-to-r dark:from-blue-900 dark:to-[#1f1461] w-full items-center bg-gradient-to-r from-indigo-300 to-sky-600  hover:text-white transition duration-150 text-white p-2 rounded-md cursor-pointer">
               Добавить в избранное
             </button>
           </div>

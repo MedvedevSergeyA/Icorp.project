@@ -40,7 +40,7 @@ const Search = () => {
           />
           <button
             type="submit"
-            className="absolute top-0 right-0 p-2.5 text-sm font-medium text-white bg-[#417b9c]  dark:bg-[#1a247d] dark:border-[#1a247d] rounded-r-lg border border-[#417b9c] hover:bg-[#265b8d] focus:ring-2 focus:outline-none focus:ring-[#265b8da9] "
+            className="absolute top-0 right-0 p-2.5 text-sm font-medium text-white dark:bg-[#1a247d] dark:text-white bg-indigo-400 rounded-r-lg border border-indigo-500 "
           >
             <i className="bi bi-search"></i>
           </button>
