@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 import SearchContext from "./context/searchContext/searchContext";
 
 const App = () => {
-  const [isAuth, setIsAuth] = useState(true);
+  const [isAuth, setIsAuth] = useState(false);
   const [searchValue, setSearchValue] = useState("");
   const { isOpen } = useSelector((store) => store.sidebar);
 

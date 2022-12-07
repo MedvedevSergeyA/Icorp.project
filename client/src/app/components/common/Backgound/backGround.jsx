@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 
 const Background = ({ children }) => {
   return (
-    <body className="bg-white dark:bg-[#191919] transition-all">
+    <div className="bg-white dark:h-[2000px] dark:md:h-auto dark:bg-[#191919] transition-all">
       {children}
-    </body>
+    </div>
   );
 };
 

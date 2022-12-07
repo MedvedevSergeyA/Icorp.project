@@ -1,6 +1,6 @@
 import httpService from "./http.services";
 
-const deviceEndpoint = "device/";
+const deviceEndpoint = "device";
 
 const deviceService = {
   get: async () => {

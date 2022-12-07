@@ -5,7 +5,7 @@ import Loader from "../components/common/Loader/loader";
 
 const DevicePage = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const { id } = useParams();
+  const { _id } = useParams();
   useEffect(() => {
     setIsLoading(true);
     setTimeout(() => {
@@ -19,7 +19,7 @@ const DevicePage = () => {
         <Loader />
       ) : (
         <div>
-          <DeviceCard id={id} />
+          <DeviceCard _id={_id} />
         </div>
       )}
     </div>

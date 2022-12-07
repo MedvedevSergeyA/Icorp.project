@@ -9,7 +9,7 @@ const basketSlice = createSlice({
   reducers: {
     addDevice: (state, action) => {
       const findItem = state.entities.find(
-        (obj) => obj.id === action.payload.id
+        (obj) => obj._id === action.payload._id
       );
       if (findItem) {
         findItem.count++;
@@ -22,7 +22,7 @@ const basketSlice = createSlice({
       state.totalPrice = calcTotalPrice(state.entities);
     },
     minusItem: (state, action) => {
-      const findItem = state.entities.find((obj) => obj.id === action.payload);
+      const findItem = state.entities.find((obj) => obj._id === action.payload);
       if (findItem) {
         findItem.count--;
       }
@@ -30,7 +30,7 @@ const basketSlice = createSlice({
     },
     removeDevice: (state, action) => {
       state.entities = state.entities.filter(
-        (obj) => obj.id !== action.payload
+        (obj) => obj._id !== action.payload
       );
       state.totalPrice = calcTotalPrice(state.entities);
     },

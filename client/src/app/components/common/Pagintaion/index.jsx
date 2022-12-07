@@ -10,8 +10,7 @@ const Pagination = ({ itemsCount, pageSize, onPageChange, currentPage }) => {
       <ul className="inline-flex items-center -space-x-px">
         {pages.map((page) => (
           <li key={"page_" + page} onClick={() => onPageChange(page)}>
-            <a
-              href="#"
+            <button
               className={`rounded-[50%] mr-4 px-3 py-2 leading-tight text-black bg-white border border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white ${
                 page === currentPage
                   ? "bg-blue-100 text-white dark:bg-indigo-300"
@@ -19,7 +18,7 @@ const Pagination = ({ itemsCount, pageSize, onPageChange, currentPage }) => {
               }`}
             >
               {page}
-            </a>
+            </button>
           </li>
         ))}
       </ul>

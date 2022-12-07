@@ -4,13 +4,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { getDeviceById } from "../../../store/deviceSlice";
 import { addDevice } from "../../../store/basketSlice";
 
-const DeviceCard = ({ id }) => {
-  const device = useSelector(getDeviceById(id));
+const DeviceCard = ({ _id }) => {
+  const device = useSelector(getDeviceById(_id));
   const { img, name, price } = device;
   const dispatch = useDispatch();
   const onClickAdd = () => {
     const item = {
-      id,
+      _id,
       img,
       name,
       price
@@ -54,6 +54,6 @@ const DeviceCard = ({ id }) => {
   );
 };
 DeviceCard.propTypes = {
-  id: PropTypes.string
+  _id: PropTypes.string
 };
 export default DeviceCard;

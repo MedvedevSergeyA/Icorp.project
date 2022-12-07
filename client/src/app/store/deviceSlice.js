@@ -38,7 +38,8 @@ export const loadDeviceList = () => async (dispatch, getState) => {
   if (isOutDated(lastFetch)) {
     dispatch(deviceRequested());
     try {
-      const { content } = await deviceService.get();
+      const content = await deviceService.get();
+      console.log(content);
       dispatch(deviceReceived(content));
     } catch (error) {
       dispatch(deviceRequestFailed(error));
@@ -48,7 +49,7 @@ export const loadDeviceList = () => async (dispatch, getState) => {
 
 export const getDeviceById = (deviceId) => (state) => {
   if (state.device.entities) {
-    return state.device.entities.find((d) => d.id === deviceId);
+    return state.device.entities.find((d) => d._id === deviceId);
   }
 };
 

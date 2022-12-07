@@ -25,7 +25,7 @@ const SideBarBasket = () => {
           </div>
 
           {device.map((device) => (
-            <BasketCartItem key={device.id} {...device} />
+            <BasketCartItem key={device._id} {...device} />
           ))}
           <div className="mt-[550px]">
             <div

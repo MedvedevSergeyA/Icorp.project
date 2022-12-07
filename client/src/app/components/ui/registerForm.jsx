@@ -8,7 +8,6 @@ const RegisterForm = () => {
     name: "",
     surname: "",
     password: "",
-    sex: "male",
     licence: false
   });
   const [errors, setErrors] = useState({});

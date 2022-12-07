@@ -8,8 +8,6 @@ module.exports = async () => {
   if (devices.length !== deviceMock.length) {
     await createInitialEntity(Device, deviceMock);
   }
-};
-module.exports = async () => {
   const categories = await Category.find();
   if (categories.length !== categoryMock.length) {
     await createInitialEntity(Category, categoryMock);
@@ -21,7 +19,7 @@ async function createInitialEntity(Model, data) {
   return Promise.all(
     data.map(async (item) => {
       try {
-        delete item._id;
+        delete item.id;
         const newItem = new Model(item);
         await newItem.save();
         return newItem;

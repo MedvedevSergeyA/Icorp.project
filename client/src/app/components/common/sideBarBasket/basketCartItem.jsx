@@ -5,25 +5,25 @@ import { DEVICE_ROUTE } from "../../../utils/consts";
 import { useDispatch, useSelector } from "react-redux";
 import { minusItem, addDevice, removeDevice } from "../../../store/basketSlice";
 
-const BasketCartItem = ({ id, img, name, price }) => {
+const BasketCartItem = ({ _id, img, name, price }) => {
   const dispatch = useDispatch();
   const basketItem = useSelector((state) =>
-    state.basket.entities.find((obj) => obj.id === id)
+    state.basket.entities.find((obj) => obj._id === _id)
   );
   const addedCount = basketItem ? basketItem.count : 0;
   const onClickPlus = () => {
     dispatch(
       addDevice({
-        id
+        _id
       })
     );
   };
   const onClickMinus = () => {
-    dispatch(minusItem(id));
+    dispatch(minusItem(_id));
   };
   const onRemoveDevice = () => {
     if (window.confirm("Вы уверены, что хотите удалить товар? ")) {
-      dispatch(removeDevice(id));
+      dispatch(removeDevice(_id));
     }
   };
   return (
@@ -38,7 +38,7 @@ const BasketCartItem = ({ id, img, name, price }) => {
         />
       </div>
       <div className="mr-[75px] ml-5">
-        <Link to={DEVICE_ROUTE + "/" + id}>
+        <Link to={DEVICE_ROUTE + "/" + _id}>
           <p className="mb-5 text-[14px] hover:underline">{name}</p>
         </Link>
         <b className="text-[12px]">Цена: {price} ₽</b>
@@ -80,7 +80,7 @@ const BasketCartItem = ({ id, img, name, price }) => {
 };
 
 BasketCartItem.propTypes = {
-  id: PropTypes.string,
+  _id: PropTypes.string,
   img: PropTypes.string,
   name: PropTypes.string,
   price: PropTypes.number
