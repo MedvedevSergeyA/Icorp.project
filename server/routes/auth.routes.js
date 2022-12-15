@@ -1,5 +1,5 @@
 const express = require("express");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const { check, validationResult } = require("express-validator");
 const tokenService = require("../services/token.service");
 const { generateUserData } = require("../utils/helper");

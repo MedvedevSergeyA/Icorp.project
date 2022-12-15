@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import ButtonCategory from "../common/modal/buttonCategory";
+
+// Context
 import SearchContext from "../../context/searchContext/searchContext";
-// import PropTypes from "prop-types";
 
 const Search = () => {
   const { searchValue, setSearchValue } = useContext(SearchContext);

@@ -1,15 +1,20 @@
 import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import { validator } from "../../utils/validator";
 import TextField from "../common/form/textField";
+import { signUp } from "../../store/userSlice";
+import { useHistory } from "react-router-dom";
+import { SHOP_ROUTE } from "../../utils/consts";
 
 const RegisterForm = () => {
   const [data, setData] = useState({
     email: "",
     name: "",
     surname: "",
-    password: "",
-    licence: false
+    password: ""
   });
+  const dispatch = useDispatch();
+  const history = useHistory();
   const [errors, setErrors] = useState({});
   const handleChange = (target) => {
     setData((prevState) => ({
@@ -62,10 +67,16 @@ const RegisterForm = () => {
     validate();
   }, [data]);
   const isValid = Object.keys(errors).length === 0;
-  const handleSubmit = (e) => {
-    e.preventDefault();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
     const isValid = validate();
     if (!isValid) return;
+    const newData = {
+      ...data
+    };
+    dispatch(signUp(newData));
+    history.push(SHOP_ROUTE);
   };
 
   return (
@@ -76,14 +87,6 @@ const RegisterForm = () => {
         value={data.email}
         onChange={handleChange}
         error={errors.email}
-      />
-      <TextField
-        label="Пароль"
-        name="password"
-        value={data.password}
-        type="password"
-        onChange={handleChange}
-        error={errors.password}
       />
       <TextField
         label="Имя"
@@ -97,13 +100,22 @@ const RegisterForm = () => {
         name="surname"
         value={data.surname}
         onChange={handleChange}
+        error={errors.surname}
+      />
+      <TextField
+        label="Пароль"
+        type="password"
+        name="password"
+        value={data.password}
+        onChange={handleChange}
+        error={errors.password}
       />
       <button
         className="bg-[#417b9c] dark:bg-[#14458f] hover:bg-[#265b8d] transition duration-150 text-white p-2 rounded-md cursor-pointer"
         type="submit"
         disabled={!isValid}
       >
-        Зарегистрироваться
+        Войти
       </button>
     </form>
   );

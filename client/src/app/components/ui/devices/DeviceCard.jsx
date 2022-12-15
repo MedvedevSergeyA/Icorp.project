@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { useDispatch, useSelector } from "react-redux";
 import { getDeviceById } from "../../../store/deviceSlice";
 import { addDevice } from "../../../store/basketSlice";
+import {
+  addDeviceToFavourite,
+  delStatusFavouriteDeviceById
+} from "../../../services/localStorage.service";
 
 const DeviceCard = ({ _id }) => {
   const device = useSelector(getDeviceById(_id));
+  const [favourite, setFavourite] = useState(false);
   const { img, name, price } = device;
   const dispatch = useDispatch();
   const onClickAdd = () => {
@@ -16,6 +21,16 @@ const DeviceCard = ({ _id }) => {
       price
     };
     dispatch(addDevice(item));
+  };
+
+  const handleFavourite = (id) => {
+    if (favourite) {
+      delStatusFavouriteDeviceById(id);
+      setFavourite(false);
+    } else {
+      addDeviceToFavourite(id);
+      setFavourite(true);
+    }
   };
   return (
     <div className="h-screen container items-center mt-16 mx-auto">
@@ -40,11 +55,15 @@ const DeviceCard = ({ _id }) => {
             </p>
             <button
               onClick={onClickAdd}
-              className="dark:bg-[#14458f] dark:hover:bg-blue-800 dark:hover:text-white mb-3 items-center w-full bg-[#417b9c] hover:bg-[#265b8d] transition duration-150 text-white p-2 rounded-md cursor-pointer"
+              className="dark:bg-[#14458f] w-full dark:hover:bg-blue-800 dark:hover:text-white text-white mb-3 items-center bg-gradient-to-br from-sky-300 to-indigo-300 hover:scale-95 transition-all duration-300 delay-75 p-2 rounded-md"
             >
               В корзину
             </button>
-            <button className="dark:bg-gradient-to-r dark:from-blue-900 dark:to-[#1f1461] w-full items-center bg-gradient-to-r from-indigo-300 to-sky-600  hover:text-white transition duration-150 text-white p-2 rounded-md cursor-pointer">
+
+            <button
+              onClick={() => handleFavourite(_id)}
+              className="dark:bg-gradient-to-r dark:from-blue-900 dark:to-[#1f1461] w-full items-center bg-gradient-to-r from-indigo-300 to-sky-600  hover:text-white transition duration-150 text-white p-2 rounded-md"
+            >
               Добавить в избранное
             </button>
           </div>

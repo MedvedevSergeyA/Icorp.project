@@ -9,7 +9,6 @@ import Pagination from "../../common/Pagintaion";
 const AllDeviceList = ({ title }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const devices = useSelector(getDeviceList());
-  console.log(devices);
   const { searchValue } = useContext(SearchContext);
   const pageSize = 4;
   const handlePageChange = (pageIndex) => {
@@ -25,7 +24,7 @@ const AllDeviceList = ({ title }) => {
       }
       return false;
     })
-    .map((device) => <Device device={device} key={device._id} />);
+    .map((device) => <Device {...device} key={device._id} />);
   const count = items.length;
   const deviceCrop = paginate(items, currentPage, pageSize);
   return (

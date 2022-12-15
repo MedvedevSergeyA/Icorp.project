@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getAuthErrors, login } from "../../store/userSlice";
 import { validator } from "../../utils/validator";
 import TextField from "../common/form/textField";
 import CheckBoxField from "../common/form/checkBoxField";
+import { useHistory } from "react-router-dom";
+import { SHOP_ROUTE } from "../../utils/consts";
 
 const LoginForm = () => {
   const [data, setData] = useState({
@@ -9,6 +13,9 @@ const LoginForm = () => {
     password: "",
     stayOn: false
   });
+  const loginError = useSelector(getAuthErrors());
+  const dispatch = useDispatch();
+  const history = useHistory();
 
   const [errors, setErrors] = useState({});
 
@@ -56,7 +63,8 @@ const LoginForm = () => {
     event.preventDefault();
     const isValid = validate();
     if (!isValid) return;
-    console.log(data);
+    dispatch(login({ payload: data }));
+    history.push(SHOP_ROUTE);
   };
 
   return (
@@ -86,6 +94,7 @@ const LoginForm = () => {
       >
         Войти
       </button>
+      {loginError && <p className="text-red-600">{loginError}</p>}
     </form>
   );
 };

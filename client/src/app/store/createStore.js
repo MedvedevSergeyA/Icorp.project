@@ -3,12 +3,14 @@ import modalReducer from "./modal";
 import deviceReducer from "./deviceSlice";
 import sideBarReducer from "./sideBar";
 import basketReducer from "./basketSlice";
+import usersReducer from "./userSlice";
 
 const rootReducer = combineReducers({
   modal: modalReducer,
   device: deviceReducer,
   sidebar: sideBarReducer,
-  basket: basketReducer
+  basket: basketReducer,
+  user: usersReducer
 });
 
 export function createStore() {

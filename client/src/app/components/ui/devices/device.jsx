@@ -1,19 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import { Rating } from "flowbite-react";
-import PropTypes from "prop-types";
 import { DEVICE_ROUTE } from "../../../utils/consts";
+import PropTypes from "prop-types";
+// Style
+import { Rating } from "flowbite-react";
+// redux
 import { useDispatch, useSelector } from "react-redux";
 import { addDevice } from "../../../store/basketSlice";
 
-const Device = ({ device }) => {
-  const { _id, img, name, price } = device;
+// LS
+import {
+  addDeviceToFavourite,
+  delStatusFavouriteDeviceById,
+  getStatusFavouriteDeviceById
+} from "../../../services/localStorage.service";
+
+const Device = ({ _id, img, name, price, rate, reviews }) => {
+  const [favourite, setFavourite] = useState(false);
   const history = useHistory();
   const dispatch = useDispatch();
   const basketItem = useSelector((state) =>
     state.basket.entities.find((obj) => obj._id === _id)
   );
   const addedCount = basketItem ? basketItem.count : 0;
+
+  useEffect(() => {
+    const status = getStatusFavouriteDeviceById(_id);
+    setFavourite(status);
+  }, []);
+
+  const handleFavourite = (id) => {
+    if (favourite) {
+      delStatusFavouriteDeviceById(id);
+      setFavourite(false);
+    } else {
+      addDeviceToFavourite(id);
+      setFavourite(true);
+    }
+  };
 
   const onClickAdd = () => {
     const item = {
@@ -24,23 +48,43 @@ const Device = ({ device }) => {
     };
     dispatch(addDevice(item));
   };
+  const styledFavourite = favourite
+    ? "fill-red-600 text-red-600"
+    : "hover:fill-red-600 text-red-600";
 
   return (
     <div
-      key={device._id}
+      key={_id}
       className="flex flex-col md:mx-auto md:w-[19rem] w-full items-center mt-4"
     >
       <div className="">
         <div>
-          <Link to="/">
-            <button className="transition ease-in-out delay-75 hover:-translate-y-1 duration-300 w-1">
-              <i className="bi bi-heart text-[#183E61] dark:text-[#5d68cf] dark:hover:text-red-600 pl-40 hover:text-red-400 hover:delay-75"></i>
+          <div>
+            <button
+              onClick={() => handleFavourite(_id)}
+              className="transition ease-in-out delay-75 hover:-translate-y-1 duration-300 w-1"
+            >
+              <span className="sr-only">Add to favourite</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className={`w-5 h-6 ml-36 ${styledFavourite}`}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
             </button>
-          </Link>
+          </div>
         </div>
         <img
-          className="w-[166x] h-[144px] transition-all duration-300 delay-75 hover:scale-125 cursor-zoom-in"
-          src={device.img}
+          className="w-[166x] h-[144px] transition-all duration-300 delay-75 hover:scale-105 cursor-zoom-in"
+          src={img}
           alt="device"
         />
       </div>
@@ -50,27 +94,27 @@ const Device = ({ device }) => {
             <Rating>
               <Rating.Star />
               <p className="text-sm font-bold text-gray-900 dark:text-[#808080] ">
-                {device.rate}
+                {rate}
               </p>
               <span className="mx-1.5 h-1 w-1 rounded-full bg-gray-500 dark:bg-gray-400" />
               <Link
                 to="/"
                 className="text-sm font-medium text-gray-900 underline hover:no-underline dark:text-[#808080]"
               >
-                {device.reviews} Просмотров
+                {reviews} Просмотров
               </Link>
             </Rating>
           </div>
           <div className="dark:text-white items-center mt-3">
             <h3
               className="hover:underline"
-              onClick={() => history.push(DEVICE_ROUTE + "/" + device._id)}
+              onClick={() => history.push(DEVICE_ROUTE + "/" + _id)}
               role="button"
             >
-              {device.name}
+              {name}
             </h3>
             <div className="">
-              <p>Цена: {device.price} ₽</p>
+              <p>Цена: {price} ₽</p>
             </div>
           </div>
         </div>
@@ -108,7 +152,12 @@ const Device = ({ device }) => {
 };
 
 Device.propTypes = {
-  device: PropTypes.object
+  _id: PropTypes.string,
+  img: PropTypes.string,
+  name: PropTypes.string,
+  price: PropTypes.number,
+  rate: PropTypes.number,
+  reviews: PropTypes.number
 };
 
 export default Device;

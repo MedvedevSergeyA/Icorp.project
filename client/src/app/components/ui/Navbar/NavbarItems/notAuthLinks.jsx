@@ -1,8 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { sideBarOpen } from "../../../../store/sideBar";
 import { Link } from "react-router-dom";
 import { LOGIN_ROUTE } from "../../../../utils/consts";
+
+// Redux
+import { sideBarOpen } from "../../../../store/sideBar";
 import { useDispatch } from "react-redux";
 
 const NotAuthLinks = ({ setOpen, open, entities, totalPrice }) => {
@@ -35,9 +37,9 @@ const NotAuthLinks = ({ setOpen, open, entities, totalPrice }) => {
             </div>
           </div>
         </li>
-        <li className="md:ml-8 text-xl md:my-0 my-7">
+        <li className="md:ml-8 ml-20 text-xl md:my-0 my-7">
           <Link className="flex px-10 py-2 items-center " to={LOGIN_ROUTE}>
-            <p className="mr-2">Войти</p>
+            <p className="mr-2 text-white">Войти</p>
             <div className="text-2xl">
               <ion-icon name="log-out-outline"></ion-icon>
             </div>

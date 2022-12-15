@@ -3,34 +3,36 @@
   <component name="ChangeListManager">
     <list default="true" id="cbdadf5c-3c1f-46cf-9d1a-3ac074d91486" name="Changes" comment="create build">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/common/Backgound/backGround.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/Backgound/backGround.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/components/common/Pagintaion/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/Pagintaion/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/appRouter/AppRouter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/appRouter/AppRouter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/common/Humbuger/humburger.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/common/Loader/loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/Loader/loader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/common/hoc/AppLoader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/hoc/AppLoader.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/components/common/sideBarBasket/basketCartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/sideBarBasket/basketCartItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/components/common/sideBarBasket/sideBarBasket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/common/sideBarBasket/sideBarBasket.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/Navbar/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/Navbar/NavBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/Navbar/NavbarItems/authLinks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/Navbar/NavbarItems/authLinks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/Navbar/NavbarItems/notAuthLinks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/Navbar/NavbarItems/notAuthLinks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/Slider.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/devices/AllDeviceList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/devices/AllDeviceList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/devices/DeviceCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/devices/DeviceCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/devices/device.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/devices/device.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/loginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/loginForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/registerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/registerForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/components/ui/search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/components/ui/search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/context/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/Auth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/Auth.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/pages/DevicePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/DevicePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/routs.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/routs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/services/devices.services.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/services/devices.services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/pages/Favourite.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/pages/Favourite.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/services/http.services.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/services/http.services.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/store/basketSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/store/basketSlice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/store/createStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/store/createStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/app/store/deviceSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/store/deviceSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/utils/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/utils/consts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config/default.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/default.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mock/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/mock/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mock/devices.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/mock/devices.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modals/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/modals/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startUp/initDatabase.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/startUp/initDatabase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/auth.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/auth.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/user.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/user.routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,31 +57,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sergey/appFastCompany&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\Sergey\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Sergey/Icorp.project",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Sergey\\AppData\\Roaming\\npm\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sergey\Icorp.project\client\src\app\assets" />
       <recent name="C:\Users\Sergey\Icorp.project\server\accets\png" />
       <recent name="C:\Users\Sergey\Icorp.project\client" />
       <recent name="C:\Users\Sergey\pet-project\src\app\components\ui\Navbar" />
       <recent name="C:\Users\Sergey\pet-project\src\app\components\common" />
-      <recent name="C:\Users\Sergey\pet-project\src\app\context\modal" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -198,7 +200,24 @@
       <workItem from="1670273003894" duration="4096000" />
       <workItem from="1670300597119" duration="35308000" />
       <workItem from="1670344741590" duration="4646000" />
-      <workItem from="1670392225655" duration="2105000" />
+      <workItem from="1670392225655" duration="2768000" />
+      <workItem from="1670427581088" duration="11285000" />
+      <workItem from="1670485683292" duration="1026000" />
+      <workItem from="1670487789265" duration="2626000" />
+      <workItem from="1670507309010" duration="8000" />
+      <workItem from="1670528035247" duration="3502000" />
+      <workItem from="1670566536449" duration="2118000" />
+      <workItem from="1670593267507" duration="359000" />
+      <workItem from="1670602037690" duration="1123000" />
+      <workItem from="1670698441228" duration="9041000" />
+      <workItem from="1670747650711" duration="6416000" />
+      <workItem from="1670756179415" duration="497000" />
+      <workItem from="1670919508767" duration="367000" />
+      <workItem from="1670957596866" duration="3052000" />
+      <workItem from="1670963615446" duration="3890000" />
+      <workItem from="1671012961432" duration="1046000" />
+      <workItem from="1671048091260" duration="34000" />
+      <workItem from="1671095793395" duration="3127000" />
     </task>
     <task id="LOCAL-00001" summary="create build">
       <created>1665771240649</created>

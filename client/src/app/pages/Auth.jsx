@@ -1,8 +1,8 @@
 import React from "react";
 import LoginForm from "../components/ui/loginForm";
-import { useLocation, NavLink } from "react-router-dom";
 import RegisterForm from "../components/ui/registerForm";
 import { LOGIN_ROUTE, REGISTRATION_ROUTE } from "../utils/consts";
+import { useLocation, NavLink } from "react-router-dom";
 
 const Auth = () => {
   const location = useLocation();

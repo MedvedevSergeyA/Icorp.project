@@ -38,8 +38,7 @@ export const loadDeviceList = () => async (dispatch, getState) => {
   if (isOutDated(lastFetch)) {
     dispatch(deviceRequested());
     try {
-      const content = await deviceService.get();
-      console.log(content);
+      const { content } = await deviceService.get();
       dispatch(deviceReceived(content));
     } catch (error) {
       dispatch(deviceRequestFailed(error));

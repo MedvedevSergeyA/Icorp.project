@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import DeviceCard from "../components/ui/devices/DeviceCard";
-import { useParams } from "react-router-dom";
 import Loader from "../components/common/Loader/loader";
+import { useParams } from "react-router-dom";
 
 const DevicePage = () => {
   const [isLoading, setIsLoading] = useState(false);

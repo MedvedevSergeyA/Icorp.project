@@ -14,7 +14,7 @@ reactDom.render(
   <Provider store={store}>
     <ThemeProvider>
       <BackGround>
-        <div className="right-14 absolute md:right-[50%] top-0 mr-4 mt-4 md:mt-4">
+        <div className="right-14 absolute right-[50%] md:right-[49%] top-0 mr-4 mt-4 md:mt-4">
           <Toggle />
         </div>
         <App />

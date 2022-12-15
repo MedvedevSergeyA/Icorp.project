@@ -1,5 +1,5 @@
-import { Carousel } from "flowbite-react";
 import React from "react";
+import { Carousel } from "flowbite-react";
 import carusel from "../../assets/carusel/carusel.jpeg";
 
 const Slider = () => {

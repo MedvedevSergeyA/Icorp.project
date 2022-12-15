@@ -1,14 +1,15 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { authRouts, publicRouts } from "../../routs";
 import { SHOP_ROUTE } from "../../utils/consts";
-import { AuthContext } from "../../context";
+import { useSelector } from "react-redux";
+import { getIsLoggedIn } from "../../store/userSlice";
 
 const AppRouter = () => {
-  const { isAuth } = useContext(AuthContext);
+  const isLoggedIn = useSelector(getIsLoggedIn());
   return (
     <Switch>
-      {isAuth &&
+      {isLoggedIn &&
         authRouts.map(({ path, Component }) => (
           <Route key={path} path={path} component={Component} exact />
         ))}

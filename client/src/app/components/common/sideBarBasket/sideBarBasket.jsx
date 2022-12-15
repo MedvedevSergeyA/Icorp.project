@@ -1,7 +1,9 @@
 import React from "react";
+import BasketCartItem from "./basketCartItem";
+
+// redux
 import { useDispatch, useSelector } from "react-redux";
 import { sideBarClose } from "../../../store/sideBar";
-import BasketCartItem from "./basketCartItem";
 import { clearDevice } from "../../../store/basketSlice";
 
 const SideBarBasket = () => {
