@@ -1,7 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { calcTotalPrice } from "../utils/calkTotalPrice";
+import { getCartFromLocalStorage } from "../services/localStorage.service";
 
-const initialState = { entities: [], totalPrice: 0 };
+const cartData = getCartFromLocalStorage();
+
+const initialState = {
+  entities: cartData.items,
+  totalPrice: cartData.totalPrice
+};
 
 const basketSlice = createSlice({
   name: "basket",

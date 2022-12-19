@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import ButtonCategory from "../common/modal/buttonCategory";
 
 // Context
 import SearchContext from "../../context/searchContext/searchContext";
@@ -9,7 +8,6 @@ const Search = () => {
   return (
     <div className="m-5 italic">
       <div className="flex justify-between">
-        <ButtonCategory />
         <div className="relative w-full ml-2">
           {searchValue && (
             <svg

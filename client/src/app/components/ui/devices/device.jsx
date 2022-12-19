@@ -22,6 +22,7 @@ const Device = ({ _id, img, name, price, rate, reviews }) => {
   const basketItem = useSelector((state) =>
     state.basket.entities.find((obj) => obj._id === _id)
   );
+
   const addedCount = basketItem ? basketItem.count : 0;
 
   useEffect(() => {

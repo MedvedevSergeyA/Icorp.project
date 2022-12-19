@@ -83,6 +83,8 @@ http.interceptors.response.use(
 
 const httpService = {
   get: http.get,
+  post: http.post,
+  delete: http.delete,
   put: http.put,
   patch: http.patch
 };

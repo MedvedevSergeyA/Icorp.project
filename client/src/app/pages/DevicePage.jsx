@@ -13,17 +13,7 @@ const DevicePage = () => {
     }, 2000);
   }, []);
 
-  return (
-    <div>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <div>
-          <DeviceCard _id={_id} />
-        </div>
-      )}
-    </div>
-  );
+  return <div>{isLoading ? <Loader /> : <DeviceCard _id={_id} />}</div>;
 };
 
 export default DevicePage;

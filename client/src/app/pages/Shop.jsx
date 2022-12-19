@@ -1,8 +1,6 @@
 import React from "react";
 import Slider from "../components/ui/Slider";
 import Search from "../components/ui/search";
-import Modal from "../components/common/modal/modal";
-import Category from "../components/ui/category";
 import AllDeviceList from "../components/ui/devices/AllDeviceList";
 
 const Shop = () => {
@@ -10,9 +8,6 @@ const Shop = () => {
     <div className="w-[100%] h-[100%] dark:h-[1200px]">
       <Search />
       <Slider />
-      <Modal>
-        <Category />
-      </Modal>
       <AllDeviceList title="Список товаров" />
     </div>
   );

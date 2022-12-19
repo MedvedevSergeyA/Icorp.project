@@ -1,3 +1,5 @@
+import { calcTotalPrice } from "../utils/calkTotalPrice";
+
 const FAVOURITE = "favourite";
 const TOKEN_KEY = "jwt-token";
 const REFRESH_KEY = "jwt-refresh-token";
@@ -68,6 +70,17 @@ export function getUserId() {
   return localStorage.getItem(USERID_KEY);
 }
 
+export const getCartFromLocalStorage = () => {
+  const data = localStorage.getItem("cart");
+  const items = data ? JSON.parse(data) : [];
+  const totalPrice = calcTotalPrice(items);
+
+  return {
+    items,
+    totalPrice
+  };
+};
+
 const localStorageService = {
   getAccessToken,
   getRefreshToken,
@@ -78,7 +91,8 @@ const localStorageService = {
   getStatusFavouriteDeviceById,
   addDeviceToFavourite,
   getFavouriteDevice,
-  delStatusFavouriteDeviceById
+  delStatusFavouriteDeviceById,
+  getCartFromLocalStorage
 };
 
 export default localStorageService;

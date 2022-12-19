@@ -25,7 +25,7 @@ router
       res.status(201).send(newComment);
     } catch (e) {
       res.status(500).json({
-        message: "На сервере произошла ошибка",
+        message: "На сервере произошла ошибка тут",
       });
     }
   });
@@ -33,7 +33,7 @@ router
 router.delete("/:commentId", auth, async (req, res) => {
   try {
     const { commentId } = req.params;
-    const removedComment = Comment.findById(commentId);
+    const removedComment = await Comment.findById(commentId);
 
     if (removedComment.userId.toString() === req.user._id) {
       await removedComment.remove();
@@ -43,7 +43,7 @@ router.delete("/:commentId", auth, async (req, res) => {
     }
   } catch (e) {
     res.status(500).json({
-      message: "На сервере произошла ошибка",
+      message: "На сервере произошла ошибка. Попробуйте позже",
     });
   }
 });

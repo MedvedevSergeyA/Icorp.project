@@ -47,7 +47,7 @@ const FavouriteDeviceCard = ({ _id, img, name, price, remove }) => {
           </div>
         </div>
         <div className="md:mr-24 md:text-[19px] md:mb-5 align-middle text-center md:mt-0 mt-5">
-          <p className="mb-2 ml-1">Цена: {price} ₽</p>
+          <p className="mb-2 ml-1">Цена: {price} ₽</p>{" "}
           <button
             onClick={onClickAdd}
             className="dark:bg-gray-600 border border-1 rounded-[15px] hover:scale-110 transition-all duration-300 delay-75 bg-gradient-to-br from-sky-300 to-indigo-300 text-white p-3"

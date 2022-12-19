@@ -7,6 +7,7 @@ import {
   addDeviceToFavourite,
   delStatusFavouriteDeviceById
 } from "../../../services/localStorage.service";
+import Comments from "../../common/Comments/Comments";
 
 const DeviceCard = ({ _id }) => {
   const device = useSelector(getDeviceById(_id));
@@ -33,7 +34,7 @@ const DeviceCard = ({ _id }) => {
     }
   };
   return (
-    <div className="h-screen container items-center mt-16 mx-auto">
+    <div className="dark:md:min-h-screen container items-center mt-16 mx-auto">
       <h1 className="mb-5 ml-5 font-bold text-lg dark:text-gray-300">
         Характирестики товара: {device.name}
       </h1>
@@ -69,6 +70,7 @@ const DeviceCard = ({ _id }) => {
           </div>
         </div>
       </div>
+      <Comments />
     </div>
   );
 };

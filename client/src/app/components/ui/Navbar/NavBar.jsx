@@ -31,7 +31,7 @@ const NavBar = () => {
           />
         ) : (
           <div className="">
-            <Link className="flex px-10 py-2 items-center " to={LOGIN_ROUTE}>
+            <Link className="flex items-center " to={LOGIN_ROUTE}>
               <p className="mr-2 text-white">Войти</p>
               <div className="text-2xl">
                 <ion-icon name="log-out-outline"></ion-icon>

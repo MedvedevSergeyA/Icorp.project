@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
@@ -10,6 +10,15 @@ import { getCurrentUserData, logOut } from "../../../../store/userSlice";
 const AuthLinks = ({ setOpen, open, entities, totalPrice }) => {
   const dispatch = useDispatch();
   const currentUser = useSelector(getCurrentUserData());
+
+  const isMounted = useRef(false);
+  useEffect(() => {
+    if (isMounted.current) {
+      const json = JSON.stringify(entities);
+      localStorage.setItem("cart", json);
+    }
+    isMounted.current = true;
+  }, [entities]);
 
   return (
     <div>
@@ -103,6 +112,7 @@ const AuthLinks = ({ setOpen, open, entities, totalPrice }) => {
   );
 };
 AuthLinks.propTypes = {
+  currentUser: PropTypes.array,
   open: PropTypes.bool,
   setOpen: PropTypes.func,
   entities: PropTypes.array,

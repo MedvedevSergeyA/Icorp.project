@@ -1,16 +1,16 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import modalReducer from "./modal";
 import deviceReducer from "./deviceSlice";
 import sideBarReducer from "./sideBar";
 import basketReducer from "./basketSlice";
 import usersReducer from "./userSlice";
+import commentsReducer from "./commentSlice";
 
 const rootReducer = combineReducers({
-  modal: modalReducer,
   device: deviceReducer,
   sidebar: sideBarReducer,
   basket: basketReducer,
-  user: usersReducer
+  users: usersReducer,
+  comments: commentsReducer
 });
 
 export function createStore() {

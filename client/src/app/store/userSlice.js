@@ -113,16 +113,22 @@ export const loadUsersList = () => async (dispatch) => {
 export const logOut = () => (dispatch) => {
   localStorageService.removeAuthData();
   dispatch(userLoggedOut());
-  // history.push("/");
+  history.push("/");
 };
 export const getCurrentUserData = () => (state) => {
-  return state.user.entities
-    ? state.user.entities.find((u) => u._id === state.user.auth.userId)
+  return state.users.entities
+    ? state.users.entities.find((u) => u._id === state.users.auth.userId)
     : null;
 };
 
-export const getUsersLoadingStatus = () => (state) => state.user.isLoading;
-export const getAuthErrors = () => (state) => state.user.error;
-export const getIsLoggedIn = () => (state) => state.user.isLoggedIn;
+export const getUsersLoadingStatus = () => (state) => state.users.isLoading;
+export const getAuthErrors = () => (state) => state.users.error;
+export const getIsLoggedIn = () => (state) => state.users.isLoggedIn;
+export const getCurrentUserId = () => (state) => state.users.auth.userId;
+export const getUserById = (userId) => (state) => {
+  if (state.users.entities) {
+    return state.users.entities.find((u) => u._id === userId);
+  }
+};
 
 export default usersReducer;

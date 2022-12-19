@@ -7,7 +7,8 @@
     "isFavourite": false,
     "price": 6500,
     "rate": 3,
-    "reviews": 30
+    "reviews": 30,
+    "category": 2
   },
   {
     "id": "659318ffdkq21",
@@ -17,7 +18,8 @@
     "isFavourite": false,
     "price": 107352,
     "rate": 3,
-    "reviews": 30
+    "reviews": 30,
+    "category": 1
   },
   {
     "id": "659318ffdkq22",
@@ -27,7 +29,8 @@
     "isFavourite": false,
     "price": 14352,
     "rate": 4,
-    "reviews": 30
+    "reviews": 30,
+    "category": 1
   },
   {
     "id": "659318ffdkq23",
@@ -37,17 +40,20 @@
     "isFavourite": false,
     "price": 16352,
     "rate": 4,
-    "reviews": 30
+    "reviews": 30,
+    "category": 4
+
   },
   {
     "id": "659318ffdkq24",
-    "name": "Apple IPhone 11 Pro Max",
+    "name": "Смартфон Apple IPhone 11 Pro Max",
     "description": "64Gb, темно-зеленый",
     "img": "//i.ibb.co/C5gBJBG/Iphone-Green.png",
     "isFavourite": false,
     "price": 114999,
     "rate": 4.3,
-    "reviews": 57
+    "reviews": 57,
+    "category": 1
   },
   {
     "id": "659318ffdkq25",
@@ -57,7 +63,9 @@
     "isFavourite": false,
     "price": 44999,
     "rate": 5,
-    "reviews": 10
+    "reviews": 10,
+    "category": 3
+
   },
   {
     "id": "659318ffdkq26",
@@ -67,7 +75,8 @@
     "isFavourite": false,
     "price": 4999,
     "rate": 4,
-    "reviews": 150
+    "reviews": 150,
+    "category": 4
   },
   {
     "id": "659318ffdkq27",
@@ -77,7 +86,8 @@
     "isFavourite": false,
     "price": 129999,
     "rate": 4,
-    "reviews": 150
+    "reviews": 150,
+    "category": 1
   },
   {
     "id": "659318ffdkq28",
@@ -87,7 +97,8 @@
     "isFavourite": false,
     "price": 42352,
     "rate": 4.5,
-    "reviews": 150
+    "reviews": 150,
+    "category": 1
   },
   {
     "id": "659318ffdkq29",
@@ -97,7 +108,8 @@
     "isFavourite": false,
     "price": 89352,
     "rate": 5,
-    "reviews": 35
+    "reviews": 35,
+    "category": 1
   },
   {
     "id": "659318ffdkq30",
@@ -107,7 +119,8 @@
     "isFavourite": false,
     "price": 4500,
     "rate": 5,
-    "reviews": 35
+    "reviews": 35,
+    "category": 2
   },
   {
     "id": "659318ffdkq31",
@@ -117,6 +130,7 @@
     "isFavourite": false,
     "price": 109352,
     "rate": 3.5,
-    "reviews": 45
+    "reviews": 45,
+    "category": 3
   }
 ]
