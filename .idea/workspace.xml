@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbdadf5c-3c1f-46cf-9d1a-3ac074d91486" name="Changes" comment="create build" />
+    <list default="true" id="cbdadf5c-3c1f-46cf-9d1a-3ac074d91486" name="Changes" comment="create build">
+      <change beforePath="$PROJECT_DIR$/amvera.yml" beforeDir="false" afterPath="$PROJECT_DIR$/amvera.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,6 +208,7 @@
       <workItem from="1671533948027" duration="1390000" />
       <workItem from="1671537073231" duration="5000" />
       <workItem from="1671549574684" duration="9000" />
+      <workItem from="1671549585205" duration="305000" />
     </task>
     <task id="LOCAL-00001" summary="create build">
       <created>1665771240649</created>
