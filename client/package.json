@@ -1,6 +1,5 @@
 {
   "name": "my-diplom-project",
-  "homepage": "https://medvedevsergeya.github.io/icrop",
   "version": "0.1.0",
   "private": false,
   "dependencies": {

@@ -19,7 +19,7 @@ const Comment = ({
       <div className="flex items-center mb-2 justify-between mt-2">
         <div className="flex items-center">
           <img width="36px" height="36px" src={user.image} alt="" />
-          <p>{user.name}</p>
+          <p className="dark:text-gray-300">{user.name}</p>
         </div>
         <div className="relative mt-2 w-20 md:w-[100px]">
           {currentUserId ? (
@@ -34,7 +34,7 @@ const Comment = ({
                 strokeWidth={1.5}
                 stroke="currentColor"
                 role="button"
-                className="w-6 h-6 border-2 rounded-[5px] opacity-[0.5] hover:opacity-100 transition-opacity"
+                className="dark:text-gray-300 w-6 h-6 border-2 rounded-[5px] opacity-[0.5] hover:opacity-100 transition-opacity"
               >
                 <path
                   strokeLinecap="round"
@@ -51,7 +51,7 @@ const Comment = ({
           </span>
         </div>
       </div>
-      <p className="mb-3 ml-2">{content}</p>
+      <p className=" dark:text-gray-300 mb-3 ml-2">{content}</p>
     </div>
   );
 };

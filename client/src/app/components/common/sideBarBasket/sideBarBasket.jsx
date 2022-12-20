@@ -13,7 +13,7 @@ const SideBarBasket = () => {
   return (
     <>
       <div className=" fixed left-0 top-0 z-50 w-[100%] h-[100%] bg-[#00000066] overflow-x-scroll">
-        <div className="dark:bg-gray-100 absolute w-[420px] h-[100%] right-0 h-auto p-[30px] bg-white flex flex-col">
+        <div className="dark:bg-gray-100 absolute md:w-[420px] w-[400px] h-[100%] right-0 h-auto p-[30px] bg-white flex flex-col">
           <div className="flex justify-between items-center">
             <div>
               <h2 className="mb-[15px] text-[24px]">Корзина</h2>
