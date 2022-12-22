@@ -21,7 +21,7 @@ const Comment = ({
           <img width="36px" height="36px" src={user.image} alt="" />
           <p className="dark:text-gray-300">{user.name}</p>
         </div>
-        <div className="relative mt-2 w-20 md:w-[100px]">
+        <div className="relative mt-2 w-20">
           {currentUserId ? (
             <span
               className="absolute -top-5 right-1"
